@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: var(--primary-color);
+}
+  /*Dark Theme*/
+:root{
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --p-size: 1.125rem;
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Roboto', sans-serif;
+}
+.dark-theme{
+  --primary-color: #2d2b2b;
+  --secondary-color: #f67c92;
+}
+h1 {
+    font-size: 2.125rem;
+  }
+h2 {
+    font-size: 1.875rem;
+  }
+h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+p{ 
+  line-height: 1.5; 
+  font-family: var(--primary-font);
+ }
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #header{
+  background-image: none;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Adjust font sizes for small devices if needed */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Adjust font sizes for medium devices if needed */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Adjust font sizes for large devices if needed */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Adjust font sizes for extra large devices if needed */
+}

@@ -1,0 +1,62 @@
+@mixin square_design {
+  .square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
+  }
+  .line{
+    line-height: 8px;
+    .line_1{
+    width: 15px;
+    height: 15px;
+    background: #f67c92;
+    display: inline-block;
+    }
+    .line_2{
+    @extend .line_1;
+    width: 80px;
+    height: 1px;
+    }
+    .line_3{
+    @extend .line_2;
+    width: 60px;
+    }
+  }
+}
+@mixin common_btn_design {
+  .common_btn{
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    color:var(--secondary-color);
+  }
+  .common_btn:hover{
+    color: #fff;
+    background: #f67c92;
+    transition: 0.5s;
+  }
+}
+@mixin section_text_design{
+  @include heading_design;
+  @include square_design;
+  @include common_btn_design;
+  p{
+    color:#777;
+    font-size: var(--p-size);
+   }
+}
+@mixin heading_design{
+  h1, h2, h3, h4, h5, h6{
+    font-family: var(--secondary-font);
+    line-height: 1.2;
+    color:var(--secondary-color);
+    margin-bottom: 15px;
+  }
+}
